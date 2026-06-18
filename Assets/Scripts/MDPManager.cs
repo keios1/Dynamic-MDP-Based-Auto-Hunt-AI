@@ -25,9 +25,12 @@ public class MDPManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
+            DontDestroyOnLoad(gameObject);
         }
-        else { 
+        else
+        {
             Destroy(gameObject);
+            return; 
         }
 
         statesCount = regions.Length;
@@ -81,7 +84,7 @@ public class MDPManager : MonoBehaviour
                     prob[i, j] = 0;
                     continue;
                 }
-                RegionDataSO target = regions[i]; // 현재 위치를 가져옴.
+                RegionDataSO target = regions[j]; // 현재 위치를 가져옴.
 
                 if(target.regionType == RegionDataSO.RegionType.Village || target.regionType == RegionDataSO.RegionType.Shop)
                 {
