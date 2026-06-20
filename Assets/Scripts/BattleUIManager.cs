@@ -34,7 +34,7 @@ public class BattleUIManager : MonoBehaviour // 옵저버패턴
         int nextBestRegionIndex = MDPManager.instance.policy[currentRegionIndex];
 
         string currentPath = MDPManager.instance.regions[currentRegionIndex].regionName;
-        string nextPath = MDPManager.instance.regions[currentRegionIndex].regionName;
+        string nextPath = MDPManager.instance.regions[nextBestRegionIndex].regionName;
 
         txtGuidePath.text = $"[Currnet Location]\n {currentPath}\n[Recommended Target]\n Move to {nextPath}";
     }
