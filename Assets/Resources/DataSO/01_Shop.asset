@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19a312831cd2b9e40ac5388e72b8cc5e, type: 3}
   m_Name: 01_Shop
   m_EditorClassIdentifier: 
-  regionName: "\uB5A0\uB3CC\uC774 \uC0C1\uC810"
+  regionName: Wandering Shop
   regionType: 1
   ATK: 0
   Exp: 0

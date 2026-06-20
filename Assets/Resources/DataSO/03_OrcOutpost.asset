@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19a312831cd2b9e40ac5388e72b8cc5e, type: 3}
   m_Name: 03_OrcOutpost
   m_EditorClassIdentifier: 
-  regionName: "\uC624\uD06C \uC8FC\uB454\uC9C0"
+  regionName: Orc Outpost
   regionType: 2
   ATK: 40
   Exp: 100

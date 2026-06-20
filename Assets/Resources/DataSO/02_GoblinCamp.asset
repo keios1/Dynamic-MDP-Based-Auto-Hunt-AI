@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19a312831cd2b9e40ac5388e72b8cc5e, type: 3}
   m_Name: 02_GoblinCamp
   m_EditorClassIdentifier: 
-  regionName: "\uACE0\uBE14\uB9B0 \uC57C\uC601\uC9C0"
+  regionName: Goblin Camp
   regionType: 2
   ATK: 15
   Exp: 30

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19a312831cd2b9e40ac5388e72b8cc5e, type: 3}
   m_Name: 06_DemonBoss
   m_EditorClassIdentifier: 
-  regionName: "\uB9C8\uC655\uC758 \uC54C\uD604\uC2E4"
+  regionName: Demon Boss Room
   regionType: 3
   ATK: 250
   Exp: 500

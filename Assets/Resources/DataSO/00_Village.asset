@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19a312831cd2b9e40ac5388e72b8cc5e, type: 3}
   m_Name: 00_Village
   m_EditorClassIdentifier: 
-  regionName: "\uC2DC\uC791\uC758 \uB9C8\uC744"
+  regionName: Start Village
   regionType: 0
   ATK: 0
   Exp: 0

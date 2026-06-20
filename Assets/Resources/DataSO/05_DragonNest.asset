@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19a312831cd2b9e40ac5388e72b8cc5e, type: 3}
   m_Name: 05_DragonNest
   m_EditorClassIdentifier: 
-  regionName: "\uB4DC\uB798\uACE4\uC758 \uB465\uC9C0"
+  regionName: Dragon Nest
   regionType: 2
   ATK: 150
   Exp: 800

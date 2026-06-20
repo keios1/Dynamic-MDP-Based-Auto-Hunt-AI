@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19a312831cd2b9e40ac5388e72b8cc5e, type: 3}
   m_Name: 04_UndeadTomb
   m_EditorClassIdentifier: 
-  regionName: "\uB9DD\uC790\uC758 \uBB34\uB364"
+  regionName: Undead Tomb
   regionType: 2
   ATK: 80
   Exp: 250
