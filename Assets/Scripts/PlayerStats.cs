@@ -10,6 +10,8 @@ public class PlayerStats : MonoBehaviour
     public int atk = 10;
     public int hp = 100;
 
+    public int currentRegionIndex =0;
+
     public System.Action OnStatsChanged;
 
     private void Awake()
@@ -28,6 +30,26 @@ public class PlayerStats : MonoBehaviour
         if (OnStatsChanged != null)
         {
             OnStatsChanged.Invoke();
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        RegionTrigger trigger = collision.GetComponent<RegionTrigger>();
+
+        if (trigger != null)
+        {
+            if(trigger.myRegionIndex != currentRegionIndex)
+            {
+                currentRegionIndex = trigger.myRegionIndex;
+                Debug.Log($"New Section : {currentRegionIndex}");
+
+                if(OnStatsChanged != null)
+                {
+                    OnStatsChanged.Invoke();
+                }
+            }
+            
         }
     }
 }

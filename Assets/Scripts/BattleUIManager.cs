@@ -9,8 +9,6 @@ public class BattleUIManager : MonoBehaviour // 옵저버패턴
     public TextMeshProUGUI txtPlayerStatus;
     public TextMeshProUGUI txtGuidePath;
 
-    private int currentRegionIndex = 0;
-
     private void Start()
     {
         if (PlayerStats.instance != null)
@@ -28,12 +26,14 @@ public class BattleUIManager : MonoBehaviour // 옵저버패턴
         int realAtk = PlayerStats.instance.atk;
         int realHp = PlayerStats.instance.hp;
 
+        int playerRegionIndex = PlayerStats.instance.currentRegionIndex;
+
         MDPManager.instance.UpdateTutorialPath(realAtk, realHp);
 
         txtPlayerStatus.text = $"[Status]\n ATK : {realAtk} / HP : {realHp}";
-        int nextBestRegionIndex = MDPManager.instance.policy[currentRegionIndex];
+        int nextBestRegionIndex = MDPManager.instance.policy[playerRegionIndex];
 
-        string currentPath = MDPManager.instance.regions[currentRegionIndex].regionName;
+        string currentPath = MDPManager.instance.regions[playerRegionIndex].regionName;
         string nextPath = MDPManager.instance.regions[nextBestRegionIndex].regionName;
 
         txtGuidePath.text = $"[Currnet Location]\n {currentPath}\n[Recommended Target]\n Move to {nextPath}";
