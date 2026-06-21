@@ -7,6 +7,7 @@ public class PlayerStats : MonoBehaviour
     public static PlayerStats instance { get; private set; } // singleton
 
     [Header("실제 플레이어 스탯")]
+    public int level = 1;
     public int atk = 10;
     public int hp = 100;
 
@@ -50,6 +51,20 @@ public class PlayerStats : MonoBehaviour
                 }
             }
             
+        }
+    }
+    public void LevelUp()
+    {
+        level++;
+
+        atk += 5;
+        hp += 20;
+
+        Debug.Log($"level up : {level}, atk : {atk}, hp : {hp}");
+
+        if (OnStatsChanged != null)
+        {
+            OnStatsChanged.Invoke();
         }
     }
 }

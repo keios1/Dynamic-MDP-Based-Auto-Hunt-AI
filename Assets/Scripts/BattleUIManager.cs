@@ -36,6 +36,7 @@ public class BattleUIManager : MonoBehaviour // 옵저버패턴
         string currentPath = MDPManager.instance.regions[playerRegionIndex].regionName;
         string nextPath = MDPManager.instance.regions[nextBestRegionIndex].regionName;
 
+        txtPlayerStatus.text = $"[Status]\n LV : {PlayerStats.instance.level} / ATK : {realAtk} / HP : {realHp}";
         txtGuidePath.text = $"[Currnet Location]\n {currentPath}\n[Recommended Target]\n Move to {nextPath}";
     }
 
