@@ -4,7 +4,7 @@
 
 강화학습의 기초가 되는 **마르코프 결정 과정(Markov Decision Process, MDP)** 알고리즘을 유니티(Unity) 게임 엔진 상에 구현하여, 단순한 하드코딩 방식의 튜토리얼이 아닌 데이터 기반의 유연한 AI 가이드 환경을 구축했습니다.
 
-🔗 **[C++ 기반의 MDP 기초 수학적 구현 리포지토리 보러가기](https://github.com/keios1/MDP_Project_C-))**
+🔗 **[C++ 기반의 MDP 구현 리포지토리 보러가기](https://github.com/keios1/MDP_Project_C-))**
 
 ---
 
